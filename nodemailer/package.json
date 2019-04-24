@@ -1,0 +1,17 @@
+{
+  "name": "nodemailer",
+  "description": "send email",
+  "authors": "MuBei",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "4.16.4",
+    "nodemailer": "6.0.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

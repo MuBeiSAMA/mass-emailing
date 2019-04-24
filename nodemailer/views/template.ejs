@@ -1,0 +1,43 @@
+  <style>
+  table{
+    border-spacing:0;
+  }
+  th,td{
+    padding:5px 10px;
+    text-align:center;
+  }
+  th{
+    background:#d7f2ff;
+  }
+  p{
+    color:#333;
+  }
+</style>
+<table border="1">
+    <tr>
+      <%for(const i in header) {%>
+        <%if (header[i] === '代扣费用') {%>
+          <th colspan="3"><%- header[i] %></th>
+        <%} else {%>
+          <th rowspan="2"><%- header[i] %></th>
+        <%}%>
+      <%}%>
+    </tr>
+
+    <tr>
+      <%for(const i in header1) {%>
+        <th><%- header1[i] %></th>
+      <%}%>
+    </tr>
+
+    <tr>
+      <%for(const i in data) {%>
+      <td><%- data[i] %></td>
+      <%}%>
+    </tr>
+</table>
+
+<%if(remark){%>
+  <p><%- remark %></p>
+<%}%>
+
