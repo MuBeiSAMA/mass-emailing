@@ -71,7 +71,9 @@ export default {
           header1,
           data
         }
-        this.$http.post('http://localhost:3000/',params).then(res=>{
+        console.log(params);
+        
+        this.$http.post('http://192.168.50.110:3000/',params).then(res=>{
           console.log(res);
         })
         

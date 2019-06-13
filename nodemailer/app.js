@@ -75,9 +75,8 @@ app.post('/', async (req, res) => {
 
       const message = {
         from: account, //tester <zhouwei@smartahc.com>
-        to: i.O,
+        to: i.P,
         subject: subject,
-        text: 'HTML加载失败,请联系相关人员解决',
         html: await ejs.renderFile('./views/template.ejs', {
           header,
           header1,
