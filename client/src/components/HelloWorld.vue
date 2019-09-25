@@ -73,8 +73,9 @@ export default {
         }
         console.log(params);
         
-        this.$http.post('http://192.168.50.110:3000/',params).then(res=>{
+        this.$http.post('http://192.168.50.110:3333/',params).then(res=>{
           console.log(res);
+          alert(res.data)
         })
         
         

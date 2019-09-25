@@ -72,10 +72,11 @@ app.post('/', async (req, res) => {
   if (verify) {
 
     for (const i of data) {
-
+      const keys = Object.keys(i)
+      const to = i[keys[keys.length - 1]]
       const message = {
         from: account, //tester <zhouwei@smartahc.com>
-        to: i.P,
+        to,
         subject: subject,
         html: await ejs.renderFile('./views/template.ejs', {
           header,
@@ -102,4 +103,4 @@ app.post('/', async (req, res) => {
 
 
 
-app.listen(3000);
+app.listen(3333);
