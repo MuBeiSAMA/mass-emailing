@@ -1,2 +1,2 @@
-# email-group-send
-> 群发邮件
+# Mass Emailing
+> vuejs + express + nodemailer implement mass email
