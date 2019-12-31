@@ -67,7 +67,6 @@ app.post('/', async (req, res) => {
   const transporter = nodemailer.createTransport(options);
 
   const verify = await transporter.verify(); // 验证SMTP连接配置
-  console.log(verify);
 
   if (verify) {
 
@@ -100,7 +99,5 @@ app.post('/', async (req, res) => {
   }
 
 });
-
-
 
 app.listen(3333);
